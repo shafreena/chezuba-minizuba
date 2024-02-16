@@ -1,0 +1,60 @@
+
+.table-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin:10px;
+  .filter{
+    display: flex;
+  }
+  .label{
+    display: block;
+    color:#3f51b5;
+    margin:5px;
+  }
+  input{
+    height: 30px;
+    background: whitesmoke;
+    border: none;
+    color: black;
+    padding:5px;
+    min-width:150px;
+}
+
+  
+  .filter-button{
+    margin: 0 10px;
+  }
+  .groupBy .mat-button-toggle-checked {
+    background-color:#3f51b5;
+    color: white;
+  } 
+}
+.table{
+  height: calc(100vh - 180px);
+  overflow: auto;
+  border: 3px groove #3f51b5 ;
+  position: relative;
+  .table-row{
+    background-color: var(--color);
+  }
+}
+
+.loading-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 56px;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button{
+  min-width: 75px;
+  height: 48px;
+  cursor: pointer;
+}
+
